@@ -16,4 +16,3 @@
   </tr>
 </table>
 
-<p>To understand the example better, we have added borders to the table.</p>
