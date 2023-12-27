@@ -1,5 +1,5 @@
 
-$\Large\textcolor{#FF6C22}{Dive-into-JS-\ Basic \ Projects \ to \ do \ in \ JavaScript}$
+$\Large\textcolor{#FF6C22}{Basic \ Projects \ to \ do \ in \ JavaScript}$
 
 ✨You can reach GitHub JavaScript from the project name 👉 please click **the project name**
 
