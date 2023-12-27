@@ -4,6 +4,9 @@
 
 
 <table style="width:100%">
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
   <tr>
     <th class="title">Project No</th>
     <th class="title">Project Name</th>
