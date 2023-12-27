@@ -2,13 +2,6 @@
 
 ✨You can reach GitHub JavaScript from the project name 👉 please click **the project name**
 
-<style>
-  .title{
-    color: #0174BE;
-    border: 1px solid #0C356A;
-  }
-</style>
-
 
 <table style="width:100%">
   <tr>
