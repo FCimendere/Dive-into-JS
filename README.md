@@ -13,4 +13,9 @@ $\Large\textcolor{#0092CC}{Basic \ Projects \ to \ do \ in \ JavaScript}$
     <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/guessNumberGame">Guess Number Game </a></td>
     <td>JS Fundamentals</td>
   </tr>
+  <tr>
+    <td>002</td>
+    <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/ToDoListProject">To Do List App </a></td>
+    <td>Array Manipulations</td>
+  </tr>
 </table>
