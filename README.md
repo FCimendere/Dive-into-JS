@@ -18,4 +18,12 @@ $\Large\textcolor{#0092CC}{Basic \ Projects \ to \ do \ in \ JavaScript}$
     <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/ToDoListProject">To Do List App </a></td>
     <td>Array Manipulations</td>
   </tr>
+  <tr>
+    <td>003</td>
+    <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/tipCalculator">Tip Calculator </a></td>
+    <td>Functions</td>
+  </tr>
+
+
+  
 </table>
