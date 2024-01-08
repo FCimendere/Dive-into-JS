@@ -7,7 +7,7 @@ It is built using HTML, Bootstrap for styling, and JavaScript.
 <hr>
 <h3>Usage</h3>
 <ol>
-  <li>Open the index.html file in your web browser.</li>
+  <li>Open the indexTip.html file in your web browser.</li>
   <li>Enter the total bill amount, select the tip ratio, and enter the number of people.</li>
   <li>Click the "Calculate Tip" button.</li>
   <li>The final amount will be displayed under the submit button.</li>
