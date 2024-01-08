@@ -1,7 +1,7 @@
 <h1>Tip Calculator</h1>
 This simple web application calculates the tip based on the total bill amount, tip ratio, and the number of people. 
 It is built using HTML, Bootstrap for styling, and JavaScript.
-<h2>Tip Calculator output</h2>
+<h3>Project Output</h3>
 <img width="300" alt="Screenshot 2024-01-08 at 21 01 09" src="https://github.com/FCimendere/Dive-into-JS/assets/65401609/fd472a9b-80e0-4c4b-915e-528dc02aeefd">
 <hr>
 <h3>Usage</h3>
