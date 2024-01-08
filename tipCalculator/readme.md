@@ -16,8 +16,8 @@ It is built using HTML, Bootstrap for styling, and JavaScript.
 <hr>
 <h3>File Structure</h3>
 <ul>
-  <li>index.html: The main HTML file containing the structure of the web page.</li>
-  <li>script.js: External JavaScript file for handling the tip calculation.</li>
+  <li>indexTip.html: The main HTML file containing the structure of the web page.</li>
+  <li>tipApp.js: External JavaScript file for handling the tip calculation.</li>
   <li>cafetip.jpg: Replace this with the actual URL of the image you want to display.</li>
 </ul>
 <hr>
