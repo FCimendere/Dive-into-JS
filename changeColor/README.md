@@ -1,42 +1,36 @@
-# Web Development Bootcamp - Change Color Randomly
+# Web Development Bootcamp - Change Color Randomly via JS
 
-This is a solution to randomly creation a RGB color code and change the box color with this color.
+This is a solution to randomly creation an RGB color code and change the box color with this color.
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-This is a basic DOM Manipulation,DOM Event Listener project with HTML, CSS and JS.
+This is a basic DOM Manipulation, DOM Event Listener project with HTML, CSS, and JS.
 
 ### The challenge
 
 Users should be able to:
 
-- Changing the color with event listener
+- Changing the color with a click button 
 - Hover and onclick action
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot 2024-02-16 at 21-43-28 Change Color](https://github.com/FCimendere/Dive-into-JS/assets/65401609/7ffc58c2-f37b-42e9-8b3d-3b34abdc1108)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My Process
 
@@ -75,16 +69,10 @@ button.addEventListener("click", rgbFounder);
 
 ### Useful resources
 
-- [Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22051276?start=420#overview) - This helped me for undestand DOM Events and DOM Manipulation.
+- [Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22051276?start=420#overview) - This helped me for understanding DOM Events and DOM Manipulation.
 
 ## Author
 
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@fly_pixie](https://twitter.com/fly_pixie)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
