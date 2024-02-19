@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./assets/projectcolor.gif" alt="this project click moves"  width="300" />
+<img src="./assets/projectcolor.gif" alt="this project click moves"  width="450" />
 
 ## My Process
 
