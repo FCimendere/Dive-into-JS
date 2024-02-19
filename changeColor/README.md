@@ -14,7 +14,6 @@ This is a solution to randomly creation an RGB color code and change the box col
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-
 ## Overview
 
 This is a basic DOM Manipulation, DOM Event Listener project with HTML, CSS, and JS.
@@ -23,13 +22,12 @@ This is a basic DOM Manipulation, DOM Event Listener project with HTML, CSS, and
 
 Users should be able to:
 
-- Changing the color with a click button 
+- Changing the color with a click button
 - Hover and onclick action
 
 ### Screenshot
 
-![Screenshot 2024-02-16 at 21-43-28 Change Color](https://github.com/FCimendere/Dive-into-JS/assets/65401609/7ffc58c2-f37b-42e9-8b3d-3b34abdc1108)
-
+<img src="./assets/projectcolor.gif" alt="this project click moves"  width="300" />
 
 ## My Process
 
@@ -73,5 +71,3 @@ button.addEventListener("click", rgbFounder);
 ## Author
 
 - Twitter - [@fly_pixie](https://twitter.com/fly_pixie)
-
-
