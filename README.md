@@ -28,6 +28,13 @@ $\Large\textcolor{#0092CC}{Basic \ Projects \ to \ do \ in \ JavaScript}$
     <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/changeColor">Change Color </a></td>
     <td>JS DOM Events, DOM Manipulation</td>
   </tr>
+<tr>
+    <td>004</td>
+    <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/scoreKeeper">PingPong Score Keeper</a></td>
+    <td>JS DOM Events & BULMA Framework</td>
+  </tr>
+
+
 
 
 
