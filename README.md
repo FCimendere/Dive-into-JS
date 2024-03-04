@@ -29,12 +29,12 @@ $\Large\textcolor{#0092CC}{Basic \ Projects \ to \ do \ in \ JavaScript}$
     <td>JS DOM Events, DOM Manipulation</td>
   </tr>
 <tr>
-    <td>004</td>
+    <td>005</td>
     <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/scoreKeeper">PingPong Score Keeper</a></td>
     <td>JS DOM Events & BULMA Framework</td>
   </tr>
   <tr>
-    <td>005</td>
+    <td>006</td>
     <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/TvShowSearchApp">TV Show Search App</a></td>
     <td>AJAX and API</td>
   </tr>
