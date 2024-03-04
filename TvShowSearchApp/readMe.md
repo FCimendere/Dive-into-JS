@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./assets/PingPong Score Keeper Video.gif" alt="PingPong Score Keeper Video.gif"  width="450" />
+<img src="./assets/TVShow_search_app.gif" alt="TvShows search app screenshot.gif"  width="450" />
 
 ## My Process
 
