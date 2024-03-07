@@ -1,4 +1,5 @@
 class ColorMaker {
+    //contructor for colormaker class
     constructor(r,g,b) {
         this.r = r;
         this.g = g;
@@ -7,10 +8,10 @@ class ColorMaker {
 
     rgb() {
         const {r,g,b} = this;
-        // return `rgb(${r},${g},${b})`;
         return [r,g,b]
     }
 
+    //HEX color calculator from RGB 
     hex() {
         let rr = this.r.toString(16);
         let gg= this.g.toString(16) ;
@@ -21,6 +22,7 @@ class ColorMaker {
         return `#${rr}${gg}${bb}`;
     }
     
+    //HSL color calculator from RGB 
     hsl() {
         const myArray = [{
             id:"r",
@@ -36,11 +38,8 @@ class ColorMaker {
         const min = Math.min(...myArray.map(item => item.calc));
         const max = Math.max(...myArray.map(item => item.calc));
         
-
         //  Luminace value calculation
         const lum = Math.round(((min+max)/2) * 100);
-
- 
 
         //  saturation value calculation
         let sat = 0 ;
@@ -52,7 +51,6 @@ class ColorMaker {
             sat = 0;
         }
         sat = Math.round(sat * 100); // %
-        // const returnedSat = `${sat*100}%`;
  
 
         // hue value calculation
@@ -62,30 +60,25 @@ class ColorMaker {
             if (max == item.calc){
                 if(item.id == "b"){
                     H = (this.r/255) - (this.g/255) / (max-min) + 4;
-                    // H = (4 + ((this.r/255)-(this.g/255))/(max-min)) ;
+
                 } else if(item.id == "r"){
-                    H = ((this.g/255 - this.b/255) / (max-min)) % 6;
-                    // H =((this.g/255)-(this.b/255))/(max-min);
+                    H = ((this.g/255 - this.b/255) / (max-min)) % 6; 
                 }else if(item.id == "g"){
                     H = ((this.b/255) - (this.r/255)) / (max-min) + 2;
-                    // H = (2 + ((this.b/255)-(this.r/255))/(max-min));
                 }
             }
-            // if (H < 0){
-            //     H += 360;
-            // }
 
         }
         let hue = Math.round(H * 60); 
         if (hue < 0){
             hue +=360;// °
         }
-        // const hue = Math.round((H.toFixed(2))*60);
         return [hue, sat, lum];
-        // return `hsl(${hue}, ${returnedSat},${returnedLum})`;
     }
-
+    
+    //Opposite(complementary) color calculator from RGB 
     complementary() {
+
         let RR = this.r - 255; 
         let GG = this.g - 255; 
         let BB = this.b - 255; 
@@ -95,56 +88,80 @@ class ColorMaker {
         
         return [RR,GG,BB];
     }
+
+    //First Adjacent color(Analogous) color calculator from HSL
+    adjacentColor(){
+        const a1 = this.hsl();
+        let hue = (a1[0]+30)-360;
+        if (hue < 0){
+            hue +=360;// °
+        }
+        return `hsl(${hue},${a1[1]}%,${a1[2]}%)`;
+    }
+
 }
 
+//function to crate random number (0-255)
 function randomise() {
     const randNum = Math.floor(Math.random() * 255);
     return randNum;
 }
 
 const btn = document.querySelector("#randomBtn2");
-
+//event for click button
 btn.addEventListener('click', ()=>{
+    //create a object for main color
     const c1 = new ColorMaker(randomise(),randomise(),randomise());
 
+    //change background color of main color
     const mainBox = document.getElementById("color1")
     const RGB = `rgb(${c1.rgb()[0]},${c1.rgb()[1]},${c1.rgb()[2]})`;
     mainBox.style.backgroundColor = RGB;
-
+    //change  of main color text for RGB
     const mainBoxRgb = document.getElementById('rgbCode1');
     mainBoxRgb.innerText = RGB;
-    
+    //change  of main color text for HEX
     const mainBoxHex = document.getElementById('hexCode1');
     mainBoxHex.innerText= (c1.hex());
-
+    //change  of main color text for HSL 
     const mainBoxHsl = document.getElementById('hslCode1');
-    const test = c1.hsl();
+    const test = c1.hsl(); //[hue, sat, lum]
     const hsl = `hsl(${test[0]}, ${test[1]}%,${test[2]}%)`;
-    console.log(hsl);
     mainBoxHsl.innerText = hsl;
 
+    //create a new object for opposite finding
     const cOpposite = new ColorMaker(c1.rgb()[0],c1.rgb()[1],c1.rgb()[2]);
-    const opposite = cOpposite.complementary();
+
+    //get opposite of the object 
+    const opposite = cOpposite.complementary(); //[RR,GG,BB]
+    const c2 = new ColorMaker(opposite[0],opposite[1],opposite[2]);
+    console.log(c2);
+
+    //change background color and colors of texts  of the opposite box
     const color2 = document.getElementById('color2');
-    const colorOpp =  `rgb(${opposite[0]},${opposite[1]},${opposite[2]})`;
-    color2.style.backgroundColor = colorOpp;
+    const opRGB = `rgb(${c2.rgb()[0]},${c2.rgb()[1]},${c2.rgb()[2]})`;
+    color2.style.backgroundColor = opRGB;
     color2.style.color = RGB;
-    mainBox.style.color = colorOpp;
+    mainBox.style.color = opRGB;
+
+    // change innertext of the color codes
     const mainBoxRgb2 = document.getElementById('rgbCode2');
-    mainBoxRgb2.innerText = colorOpp;
-    // const mainBoxHex2 = document.getElementById('hexCode2');
-    // mainBoxHex2.innerText= (cOpposite.hex());
+    mainBoxRgb2.innerText = opRGB;
     const mainBoxHsl2 = document.getElementById('hslCode2');
-    const test2 = opposite.hsl();
-    const hsl2 = `hsl(${test2[0]}, ${test2[1]}%,${test2[2]}%)`;
-    console.log(hsl2);
+    const hslDemo = c2.hsl();//[hue, sat, lum]
+    const hsl2 = `hsl(${hslDemo[0]}, ${hslDemo[1]}%,${hslDemo[2]}%)`;
     mainBoxHsl2.innerText = hsl2;
 
+    //change  of main color text for HEX
+    const mainBoxHex2 = document.getElementById('hexCode2');
+    mainBoxHex2.innerText= (c2.hex());
+
+    //change  of adjacent color's background
+    const color3 = document.getElementById('color3');
+    color3.style.backgroundColor =  c1.adjacentColor();
+    const hslCode3 = document.getElementById('hslCode3');
+    hslCode3.innerText = c1.adjacentColor();
+    color3.style.color = opRGB;
 
 });
-
-
-
-
-
-
+    
