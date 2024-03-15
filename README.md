@@ -43,7 +43,11 @@ $\Large\textcolor{#0092CC}{Basic \ Projects \ to \ do \ in \ JavaScript}$
     <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/ColorGenerator">Random Color Generator</a></td>
     <td>OOP, Class, Method, DOM Events</td>
   </tr>
-
+ <tr>
+    <td>008</td>
+    <td><a href="https://github.com/FCimendere/Dive-into-JS/tree/main/language-guesser">Language Guess</a></td>
+    <td>Node.JS & NPM Modules</td>
+  </tr>
 
 
 
