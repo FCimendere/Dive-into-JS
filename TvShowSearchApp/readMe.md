@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./assets/TVShow_search_app.gif" alt="TvShows search app screenshot.gif"  width="450" />
+<img src="./assets/TVShow_search_app.gif" alt="TvShows search app screenshot.gif"  width="900" />
 
 ## My Process
 
